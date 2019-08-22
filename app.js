@@ -43,6 +43,7 @@ app.get('/replace', (req, res) => {
     result = result.replace('111111', req.query.UTM);
     result = result.replace('222222', req.query.SMI);
     result = result.replace('[Nickname]', req.query.nickname);
+    result = result.replace('ONE DAY', req.query.days);
     result = result.replace('**Day**', req.query.day);
     result = result.replace('**Month**', req.query.month);
     result = result.replace('**#**', req.query.number);
@@ -53,8 +54,8 @@ app.get('/replace', (req, res) => {
     result = result.replace('**Location**', req.query.location);
     result = result.replace(regex, req.query.buttoncolor);
 
-    fs.writeFileSync('output.html', result);
-    res.download('output.html');
+    fs.writeFileSync('XXXX_EE-SS.html', result);
+    res.download('XXXX_EE-SS.html');
   });
 
 });
