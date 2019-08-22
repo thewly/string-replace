@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <title>College Email Generator</title>
+  <title>OL Email Generator</title>
   <style>
     .space {
       margin-top: 1rem;
@@ -23,7 +23,7 @@
     .form-control,
     label,
     button,
-    h2 {
+    h3 {
       font-family: 'Montserrat', sans-serif;
     }
   </style>
@@ -35,7 +35,7 @@
       <div class="card">
         <div class="row">
           <div class="col text-center">
-            <h2>The "I'm sick of manually doing college emails" Generator</h2>
+            <h3>The "I'm sick of manually doing college emails" OL Email Generator</h3>
           </div>
         </div>
         <form method="GET" action="/replace">
@@ -47,13 +47,13 @@
                   <input type="text" id="schoollink" name="schoollink" class="form-control form-control-sm" placeholder="schoollink">
                 </div>
                 <div class="space">
-                  <label for="schoolnamehead">School Name(headline):</label>
+                  <label for="schoolnamehead">Main Headline:</label>
                   <input type="text" id="schoolnamehead" name="schoolnamehead" class="form-control form-control-sm"
-                    placeholder="School Name">
+                    value="Order your Official School Name Ring now to ensure ceremony delivery!">
                 </div>
                 <div class="space">
                   <label for="schoolname">School Name(images):</label>
-                  <input type="text" id="schoolname" name="schoolname" class="form-control form-control-sm" placeholder="schoolname">
+                  <input type="text" id="schoolname" name="schoolname" class="form-control form-control-sm" value="schoolname">
                 </div>
                 <div class="space">
                   <label for="UTM">In Hand Date:</label>
@@ -68,8 +68,8 @@
                   <input type="text" id="nickname" name="nickname" class="form-control form-control-sm" placeholder="[Nickname]">
                 </div>
                 <div class="space">
-                  <label for="days">How Many Days:</label>
-                  <input type="text" id="days" name="days" class="form-control form-control-sm" placeholder="ONE DAY">
+                  <label for="days">Subead(how many days):</label>
+                  <input type="text" id="days" name="days" class="form-control form-control-sm" value="ONE DAY ONLY">
                 </div>
                 <div class="space">
                   <label for="day">Day of Week:</label>
@@ -88,8 +88,8 @@
                   <input type="text" id="number" name="number" class="form-control form-control-sm" placeholder="31" required>
                 </div>
                 <div class="space">
-                  <label for="starthour">Starting Hour:</label>
-                  <input type="text" id="starthour" name="starthour" class="form-control form-control-sm" placeholder="00" required>
+                  <label for="starthour">Starting Hour(optional):</label>
+                  <input type="text" id="starthour" name="starthour" class="form-control form-control-sm" placeholder="00">
                 </div>
                 <div class="space">
                   <label for="am">Starting a.m. or p.m.:</label>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="space">
                   <label for="buttoncolor">Button Color:</label>
-                  <input type="text" id="buttoncolor" name="buttoncolor" class="form-control form-control-sm" placeholder="#000000"
+                  <input type="text" id="buttoncolor" name="buttoncolor" class="form-control form-control-sm" value="000000"
                     required>
                 </div>
               </div>
