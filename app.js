@@ -49,14 +49,11 @@ app.get('/replace', (req, res) => {
     }
 
     var regex = /000000/gi;
-
-    result = result.replace(regex, req.query.buttoncolor);
-
-    regex = /schoolname/gi;
-    result = result.replace(regex, req.query.schoolname);
+    var SNregex = /schoolname/gi;
 
     var result = data.replace('schoollink', req.query.schoollink);
     // result = result.replace(/asdf/g, req.query.text);
+    result = result.replace(SNregex, req.query.schoolname);
     result = result.replace('Order your Official School Name Ring now to ensure ceremony delivery!', req.query.schoolnamehead);
     result = result.replace('111111', req.query.UTM);
     result = result.replace('222222', req.query.SMI);
@@ -70,6 +67,7 @@ app.get('/replace', (req, res) => {
     result = result.replace('**00**', req.query.endhour);
     result = result.replace('**p.m.**', req.query.pm);
     result = result.replace('**Location**', req.query.location);
+    result = result.replace(regex, req.query.buttoncolor);
 
     fs.writeFileSync('XXXX_EE-SS.html', result);
     res.download('XXXX_EE-SS.html');
