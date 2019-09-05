@@ -35,7 +35,7 @@
       <div class="card">
         <div class="row">
           <div class="col text-center">
-            <h3>OL College Email Generator</h3>
+            <h3>SS Email Generator</h3>
           </div>
         </div>
         <form method="GET" action="/replace">
@@ -52,7 +52,7 @@
                     value="Order your Official School Name Ring now to ensure ceremony delivery!">
                 </div>
                 <div class="space">
-                  <label for="schoolname">School Name(images):</label>
+                  <label for="schoolname">School Name (for images):</label>
                   <input type="text" id="schoolname" name="schoolname" class="form-control form-control-sm" value="schoolname">
                 </div>
                 <div class="space">
@@ -68,32 +68,38 @@
                   <input type="text" id="nickname" name="nickname" class="form-control form-control-sm" placeholder="[Nickname]">
                 </div>
                 <div class="space">
-                  <label for="days">Subead(how many days):</label>
-                  <input type="text" id="days" name="days" class="form-control form-control-sm" value="ONE DAY ONLY">
+                  <label for="buttoncolor">Button Color:</label>
+                  <input type="text" id="buttoncolor" name="buttoncolor" class="form-control form-control-sm" value="000000"
+                    required>
                 </div>
-                <div class="space">
-                  <label for="day">Day of Week:</label>
-                  <input type="text" id="day" name="day" class="form-control form-control-sm" placeholder="Day">
-                </div>
+                
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <div class="space">
+                <!-- <div class="space">
                   <label for="month">Month:</label>
                   <input type="text" id="month" name="month" class="form-control form-control-sm" placeholder="Oct." required>
                 </div>
                 <div class="space">
                   <label for="number">Day of Month:</label>
                   <input type="text" id="number" name="number" class="form-control form-control-sm" placeholder="31" required>
+                </div> -->
+                <div class="space">
+                  <label for="days">Subead (how many days):</label>
+                  <input type="text" id="days" name="days" class="form-control form-control-sm" value="ONE DAY ONLY">
                 </div>
                 <div class="space">
-                  <label for="starthour">Starting Hour(optional):</label>
+                  <label for="day">Day of Week, Month & Day of Month:</label>
+                  <input type="text" id="day" name="day" class="form-control form-control-sm" placeholder="Thursday, Oct. 31">
+                </div>
+                <div class="space">
+                  <label for="starthour">Starting Hour or 'Noon' (optional):</label>
                   <input type="text" id="starthour" name="starthour" class="form-control form-control-sm" placeholder="00">
                 </div>
                 <div class="space">
                   <label for="am">Starting a.m. or p.m.:</label>
-                  <input type="text" id="am" name="am" class="form-control form-control-sm" placeholder="a.m." required>
+                  <input type="text" id="am" name="am" class="form-control form-control-sm" value="a.m." required>
                 </div>
                 <div class="space">
                   <label for="endhour">Ending Hour:</label>
@@ -101,16 +107,11 @@
                 </div>
                 <div class="space">
                   <label for="pm">Ending a.m. or p.m.:</label>
-                  <input type="text" id="pm" name="pm" class="form-control form-control-sm" placeholder="p.m." required>
+                  <input type="text" id="pm" name="pm" class="form-control form-control-sm" value="p.m." required>
                 </div>
                 <div class="space">
                   <label for="location">Location:</label>
                   <input type="text" id="location" name="location" class="form-control form-control-sm" placeholder="location" required>
-                </div>
-                <div class="space">
-                  <label for="buttoncolor">Button Color:</label>
-                  <input type="text" id="buttoncolor" name="buttoncolor" class="form-control form-control-sm" value="000000"
-                    required>
                 </div>
               </div>
             </div>
