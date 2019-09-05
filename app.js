@@ -50,13 +50,16 @@ app.get('/replace', (req, res) => {
 
     var regex = /000000/gi;
     var SNregex = /schoolname/gi;
+    var SLregex = /schoollink/gi;
+    var UTMregex = /111111/gi;
+    var SMIregex = /222222/gi;
 
-    var result = data.replace('schoollink', req.query.schoollink);
+    var result = data.replace(SLregex, req.query.schoollink);
     // result = result.replace(/asdf/g, req.query.text);
     result = result.replace(SNregex, req.query.schoolname);
     result = result.replace('Order your Official School Name Ring now to ensure ceremony delivery!', req.query.schoolnamehead);
-    result = result.replace('111111', req.query.UTM);
-    result = result.replace('222222', req.query.SMI);
+    result = result.replace(UTMregex, req.query.UTM);
+    result = result.replace(SMIregex, req.query.SMI);
     result = result.replace('[Nickname]', req.query.nickname);
     result = result.replace('ONE DAY ONLY', req.query.days);
     result = result.replace('**Day**, **Month** **#**', req.query.day);
